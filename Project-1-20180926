@@ -1,0 +1,34 @@
+//WCMN Lab 1    
+    #include <iostream>
+    #include <math.h>
+    using namespace std;
+    
+    int main()
+{
+  const double g=-9.8; //Acceleration due to gravity in y
+  const double PI=3.1415926; //It's Pi dude...
+   double FA; //Initial Angle in Degrees
+   double angi; //Initial Angle in Radians
+   double Vi; //Initial Velocity
+   double x; //Distance to Building
+   double hi; //Height of Building
+   double t; //Time to hit building
+   double vx; //Velocity in x
+   double vy; //Velocity in y
+   double vfy; //Final Velocity in y
+   double Vf; //Final Total Velocity
+   //set velocity, angle, distance, height
+   cout << "Enter the Velocity in m/s:";
+   cin >> Vi;
+   cout<<"Enter Initial Angle:";
+   cin>>FA;
+   cout<<"Enter the Distance to the Target:";
+   cin>>x;
+   angi=(PI/180)*FA; //Conversion from Degrees to Radians
+   vx=(Vi)*cos(angi); //Solution for Velocity in x
+   cout<<"The Velocity in x is:"<<vx<<;
+   t=x/vx;
+   
+  
+    return 0;
+}
